@@ -1,0 +1,228 @@
+<!Doctype html>
+   <html>
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <meta name="Description" content="Opinion survey on Rape">
+      <title></title>
+          <link href="surveyform.css" rel="stylesheet">
+          <link rel='icon' href='favicon.ico'  type='image/x-icon'/>
+      </head>
+      <body>
+          <div class="container">
+            <header class="header">
+             <h1 id="title" class="text-center">Rape Culture: Victim Blaming Survey Form</h1>
+                <p id="description" class="description text-center">
+                   Thank you for taking the time to contribute to this platform
+                </p>
+            </header>
+       <form id="survey-form">
+          <div class="form-group">
+             <label id="name-label" for="name">Name</label>
+               <input
+                 type="text"
+                 name="name"
+                 id="name"
+                 class="form-control"
+                 placeholder="Enter your name"
+                 required
+              />
+          </div>
+          <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+               <input
+                 type="email"
+                 name="email"
+                 id="email"
+                 class="form-control"
+                 placeholder="Enter your Email"
+                 required
+               />
+          </div>
+          <div class="form-group">
+              <label id="number-label" for="number">
+                Age<span class="clue">(optional)</span></label>
+                <input
+                  type="number"
+                  name="age"
+                  id="number"
+                  min="10"
+                  max="99"
+                  class="form-control"
+                  placeholder="Age"/>
+          </div>
+          <div class="form-group">
+            <p>Which option best describes your current role?</p>
+              <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="student">Student</option>
+              <option value="job">Employed</option>
+              <option value="self-Employed">Business Owner</option>
+              <option value="unemployed">Self-Employed</option>
+              <option value="other">Unemployed</option>
+              <option value="other">Other</option>
+          </select>
+          </div>
+
+          <div class="form-group">
+           <p>Are rape victims to be blamed for the rape?</p>
+            <label>
+             <input
+              name="user-recommend"
+              value="Never"
+              type="radio"
+              class="input-radio"
+              checked
+               />Never </label >
+            <label>
+             <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              />Definitely </label>
+
+            <label>
+             <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+              />Maybe</label>
+
+
+            <label>
+             <input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+             />Not sure</label>
+          </div>
+
+          <div class="form-group">
+            <p>
+             Who are the rapists?
+            </p>
+             <select id="most-like" name="mostLike" class="form-control" required>
+             <option disabled selected value>Select an option</option>
+             <option value="Family">Family</option>
+             <option value="Strangers">Strangers</option>
+             <option value="Friends">Friends</option>
+             <option value="Lovers">Lovers</option>
+            </select>
+          </div>
+
+         <div class="form-group">
+           <p>
+             Which of these is a sufficient reason for rape to occur?
+             <span class="clue">(Check all that apply)</span>
+           </p>
+
+        <label>
+           <input
+            name="prefer"
+            value="She wears short skirt and she wears provocative dresses"
+            type="checkbox"
+            class="input-checkbox"
+            />She wears short skirt and she wears provocative dresses</label>
+        <label>
+          <input
+            name="prefer"
+            value="Boys will be boys"
+            type="checkbox"
+            class="input-checkbox"
+            />Boys will be boys, a man must get what he wants</label>
+        <label>
+          <input
+           name="prefer"
+           value="She is a prostitute"
+           type="checkbox"
+           class="input-checkbox"
+           />She is a prostitute</label>
+        <label>
+          <input
+           name="prefer"
+           value="She walks in the Dark"
+           type="checkbox"
+           class="input-checkbox"
+           />She walks in the Dark</label>
+        <label>
+           <input
+            name="prefer"
+            value="She is a stripper"
+            type="checkbox"
+            class="input-checkbox"
+            />She is a stripper</label>
+        <label>
+          <input
+            name="prefer"
+            value="She visited him, so she wanted it"
+            type="checkbox"
+            class="input-checkbox"
+            />She visits him, so she wants it</label>
+        <label>
+          <input
+            name="prefer"
+            value="Abeg, Abeg, she collected his money "
+            type="checkbox"
+            class="input-checkbox"
+           />Abeg, Abeg, she collects his money</label>
+        <label>
+          <input
+           name="prefer"
+           value="She smokes and drinks, so she is a bad girl"
+           type="checkbox"
+           class="input-checkbox"
+          />She smokes and drinks, so she is a bad girl</label>
+        <label>
+          <input
+           name="prefer"
+           value="She is not a virgin"
+           type="checkbox"
+           class="input-checkbox"
+           />She is not a virgin</label>
+        <label>
+         <input
+           name="prefer"
+           value="She is a flirt"
+           type="checkbox"
+           class="input-checkbox"
+            />She is a Flirt</label >
+        <label>
+          <input
+            name="prefer"
+            value=""
+            type="checkbox"
+            class="input-checkbox"
+          />She does not scream, she only says no</label>
+        <label>
+          <input
+            name="prefer"
+            value=""
+            type="checkbox"
+            class="input-checkbox"
+          />None of the above</label>
+
+
+     </div>
+
+     <div class="form-group">
+       <p>Any comments?</p>
+        <textarea
+         id="comments"
+         class="input-textarea"
+         name="comment"
+         placeholder="Enter your comment here..."></textarea>
+     </div>
+
+     <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+     </div>
+    </form>
+   </div>
+  </body>
+</html>
